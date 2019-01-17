@@ -1,5 +1,8 @@
 class Application
 
+  Item.new("Tome de chevre", 4.58)
+  Item.new("Foie gras de canard", 12.73)
+
   def call(env)
     resp = Rack::Response.new
     req = Rack::Request.new(env)
